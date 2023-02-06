@@ -8,7 +8,7 @@ fnames = ['file1.txt', 'file2.txt']
 def maruti_generator():
     word = random.choice(['MARUTI', 'NOT_MARUTI'])
     if word == "NOT_MARUTI":
-        return f"{''.join(random.sample(string.ascii_uppercase,k=6))}\n"
+        return f"{''.join(random.sample(string.ascii_uppercase,k=random.randint(1,10)))}\n"
     else:
         return f'{word}\n'
 
